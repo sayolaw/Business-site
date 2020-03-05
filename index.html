@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company Name</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin>
+</script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid" id="root"> <!-- Div id where react components will be loaded into-->
+
+	</div>
+</body>
+<script type="text/javascript" src="script.js"> 
+</script> <!-- our react javascript file -->
+<script type="text/javascript">
+
+	/*Javascript to collapse and uncollapse the hamburger */
+	var heightValue="350px"
+	var marginValue="30px 0"
+	$('.hamburgers').on('click',function(){
+		$('.links').animate({
+			height:heightValue,
+			margin:marginValue
+		}, 2500)
+		if(heightValue=="350px"){
+			heightValue="0.1px"
+			marginValue="0px 0"
+		}
+		else{
+			heightValue="350px"
+			marginValue="30px 0"
+
+		}
+	})
+  
+</script>
+</html>

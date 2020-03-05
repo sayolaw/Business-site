@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: raleway; }
+
+.app {
+  padding: 0; }
+
+.navbar {
+  background-color: #222422;
+  color: white; }
+  .navbar nav .brand {
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    font-weight: bold; }
+  .navbar nav .links {
+    list-style: none;
+    font-family: raleway;
+    font-weight: 500;
+    margin: 0 0 0 50px; }
+    .navbar nav .links li a {
+      font-size: 0.7em;
+      color: white;
+      padding-bottom: 2px;
+      border-bottom: gold; }
+    .navbar nav .links li a:hover {
+      border-bottom: 2px solid gold; }
+  .navbar nav .hamburgers {
+    display: none;
+    cursor: pointer;
+    margin: 0;
+    list-style: none;
+    transform: rotateY(180deg); }
+    .navbar nav .hamburgers li {
+      width: 25px;
+      height: 2px;
+      background-color: white; }
+    .navbar nav .hamburgers #ham-2 {
+      width: 20px;
+      margin: 3px 0; }
+    .navbar nav .hamburgers #ham-3 {
+      width: 15px; }
+
+/* banner section*/
+.banner {
+  padding: 0;
+  height: 523px;
+  background-color: black;
+  color: white; }
+  .banner .texts .btn-primary {
+    background-color: #222422 !important;
+    border: 0; }
+  .banner h2 {
+    font-size: 1.3em; }
+  .banner h4 {
+    margin: 30px 0;
+    width: 60vw;
+    letter-spacing: 5px;
+    font-size: 2.2em;
+    line-height: 150%;
+    font-weight: 300; }
+    .banner h4 .emphasize {
+      color: #402d0e; }
+
+/* what we do section*/
+.wwd {
+  height: 1000px; }
+  .wwd .knowAboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px; }
+    .wwd .knowAboutUs h3 {
+      font-size: 2.2em;
+      color: #402d0e; }
+    .wwd .knowAboutUs .underline {
+      margin: 30px;
+      background-color: #402d0e;
+      width: 50px;
+      height: 5px; }
+    .wwd .knowAboutUs p {
+      color: #222422;
+      font-size: 1.1em;
+      width: 40vw;
+      line-height: 200%; }
+  .wwd .theBest {
+    height: 550px;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #fafafa;
+    display: flex; }
+    .wwd .theBest img {
+      width: 640px;
+      height: 550px; }
+    .wwd .theBest .text {
+      padding: 50px 0;
+      margin-left: 10vw; }
+      .wwd .theBest .text h3 {
+        color: #402d0e;
+        letter-spacing: 3px; }
+      .wwd .theBest .text p {
+        margin: 20px 0;
+        line-height: 200%;
+        font-size: 1em; }
+  .wwd .service {
+    margin-top: 100px;
+    text-align: center; }
+    .wwd .service .overview {
+      margin: 0 auto; }
+      .wwd .service .overview h3 {
+        color: #402d0e;
+        letter-spacing: 3px; }
+      .wwd .service .overview p {
+        margin: 20px 0;
+        line-height: 200%;
+        font-size: 1em; }
+    .wwd .service ul .services {
+      margin-top: 50px; }
+      .wwd .service ul .services h3 {
+        margin: 20px 0;
+        color: #402d0e;
+        letter-spacing: 3px; }
+      .wwd .service ul .services p {
+        font-size: 0.8em;
+        line-height: 200%; }
+
+/* For mobile screens*/
+@media screen and (max-width: 767px) {
+  .navbar nav .links {
+    height: 0.1px;
+    overflow: hidden;
+    margin: 0px 0; }
+    .navbar nav .links li {
+      margin: 10px 0;
+      padding: 5px 3px; }
+      .navbar nav .links li a {
+        font-size: 0.8em; }
+    .navbar nav .links .active {
+      background-color: #212121; }
+  .navbar nav .hamburgers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .banner {
+    display: flex;
+    align-items: center; }
+    .banner .texts {
+      height: 300px; }
+    .banner h2 {
+      font-size: 1em; }
+    .banner h4 {
+      font-size: 1.5em;
+      width: 90vw; }
+
+  .wwd {
+    height: 1500px; }
+    .wwd .knowAboutUs {
+      width: 100vw; }
+      .wwd .knowAboutUs h3 {
+        font-size: 1.8em; }
+      .wwd .knowAboutUs p {
+        width: 90vw;
+        font-size: 0.9em; }
+    .wwd .theBest {
+      height: 650px; }
+      .wwd .theBest img {
+        display: none; }
+      .wwd .theBest .text {
+        width: 80vw;
+        text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
