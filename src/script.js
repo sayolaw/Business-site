@@ -3,7 +3,7 @@ function Nav(props){
 	<div className="row navbar">
 	
 	{/* Navigation Bar */}
-	<nav className="row col-md-12 justify-content-md-center align-items-lg-center
+	<nav className="row justify-content-md-center align-items-lg-center
 	align-items-md-center">
 
 		{/* Company Brand Identity */}
@@ -129,12 +129,45 @@ function Service(props){
 
 		)
 }
+
+
+{/*Complete Skillsets*/}
+function Skills(props){
+	return(
+		<div className="skills row">
+
+			<Skill number="90" skill="Management" />
+			<Skill number="70" skill="Marketing" />
+			<Skill number="63" skill="Research" />
+			<Skill number="87" skill="Consultancy" />
+			<Skill number="23" skill="Promotion" />
+		</div>)
+}
+
+function Skill(props){
+	return(
+		<div className="skill">
+		<div className="contain">
+			<div className="percent">
+				<div  className="gauge">
+				</div>
+				<div className="circle">
+					<h2>{props.number}<small>%</small></h2>
+				</div>
+			</div>
+		</div>
+		<h3>{props.skill}</h3>
+		</div>
+
+		)
+}
 function App(props){
 	return(
 		<div className="app">
 		<Nav />
 		<Banner />
 		<Wwd />
+		<Skills />
 		</div>
 		)
 }
