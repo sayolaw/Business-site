@@ -35,7 +35,7 @@
 			return true;
 		}
 	}
-	$(window).on('scroll',function(){
+	$(window).on('resize scroll',function(){
 		var result = checkHeight()
 		if(result==true){
 			$('.gauge').animate({
