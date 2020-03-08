@@ -1,0 +1,335 @@
+$grey:#222422;
+$brown:#402d0e;
+$light:#fafafa;
+$baige:#d9c89e;
+body{
+	margin:0;
+	font-family: raleway;
+
+}
+.app{
+	padding:0;
+}
+.navbar{
+	background-color:$grey;
+	color:white;
+	nav{
+		width:100vw;
+		.brand{
+			font-size: 1.7em;
+			letter-spacing: 3px;
+			font-weight: bold;
+		}
+		.links{
+
+			list-style: none;
+			font-family: raleway;
+			font-weight:500;
+			margin: 0 0 0 50px;
+				li{
+					a{
+						font-size: 0.7em;
+						color:white;
+						padding-bottom: 2px;
+						border-bottom:gold;
+					}
+					a:hover{
+						border-bottom:2px solid gold;
+					}
+				}
+			
+		}
+		.hamburgers{
+			display: none;
+			cursor: pointer;
+			margin: 0;
+			list-style: none;
+			transform: rotateY(180deg);
+			li{
+				width:25px;
+				height:2px;
+				background-color:white;
+
+			}
+			#ham-2{
+				width:20px;
+				margin:3px 0;
+			}
+			#ham-3{
+				width:15px;
+				
+			}
+		}
+	}
+}
+
+/* banner section*/
+.banner{
+	padding:0;
+	height:523px;
+	background-color:black;
+	color:white;
+	.texts{
+		.btn-primary{
+		background-color:$grey  !important;
+		border:0;
+
+	}
+	}
+	h2{
+		font-size: 1.3em;
+	}
+	h4{
+		margin:30px 0;
+		width:60vw;
+		letter-spacing: 5px;
+		font-size: 2.2em;
+		line-height: 150%;
+		font-weight: 300;
+		.emphasize{
+			color:$brown;
+		}
+	}
+}
+
+/* what we do section*/
+.wwd{
+
+	.knowAboutUs{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: center;
+		text-align: center;
+		height:300px;
+		h3{
+			font-size: 2.2em;
+			color:$brown;
+		}
+		.underline{
+			margin: 30px;
+			background-color:$brown;
+			width:50px;
+			height:5px;
+		}
+		p{
+			color:$grey;
+			font-size:1.1em;
+			width: 40vw;
+			line-height: 200%;
+		}
+	}
+
+
+	.theBest{
+		height:550px;
+		margin: 0;
+		width: 100vw;
+		overflow-x: hidden;
+		background-color: $light;
+		display: flex;
+		img{
+				width:640px;
+				height:550px;
+			}
+		.text{
+		
+			padding:50px 0;
+			margin-left: 10vw;
+			h3{
+				color:$brown;
+				letter-spacing: 3px;
+			}
+			p{
+				margin:20px 0;
+				line-height: 200%;
+				font-size: 1em;
+			}
+		}
+	}
+	.service{
+		margin-top: 100px;
+		text-align: center;
+		.overview{
+			h3{
+				color:$brown;
+				letter-spacing: 3px;
+			}
+			p{
+				margin:20px 0;
+				line-height: 200%;
+				font-size: 1em;
+			}
+			margin:0 auto;
+		}
+		ul{
+			.services{
+				margin-top: 50px;
+				h3{
+					margin:20px 0;
+					color:$brown;
+				letter-spacing: 3px;
+				}
+				p{
+					font-size: 0.8em;
+					line-height: 200%;
+				}
+			}
+		}
+	}
+	
+}
+
+.skills{
+	height:450px;
+	margin-top:100px;
+	background:url('Images/background.jpg') rgba(0, 0, 0, 0.7);
+	background-blend-mode:multiply;
+	background-size:1280px 720px;
+	background-position:center;
+	justify-content: center;
+
+	.skill{
+		margin-right:50px;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: center;
+		h3{
+			margin-top: 30px;
+			color:white;
+			font-size:0.8em;
+		}
+	
+	.contain{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	background-color:black;
+	border:2px solid $baige;
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	padding:2px;
+	overflow:hidden;
+	.percent{
+	display:flex;
+	flex-direction: column;
+	position:relative;
+	z-index: 1;
+	align-items:center;
+	background-color:black;
+	width:140px;
+	height:140px;
+	border-radius:50%;
+	overflow: hidden;
+
+	.gauge{
+		position:relative;
+		top:0px;
+		width:10px;
+		height:11px;
+		z-index:0;
+		background-color:white;
+	}
+	
+	.circle{
+		position: absolute;
+		z-index: 2;
+		transform: translateY(2px);
+		width:136px;
+		height:136px;
+		background-color:black;
+		border-radius:50%;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		color:white;
+		h2{
+			font-size:0.9em;
+		}
+	}
+}
+
+}
+}
+}
+
+
+
+/* For mobile screens*/
+@media screen and (max-width: 767px) {
+  .navbar{
+  	nav{
+  	.links{
+  		height:0.1px;
+  		overflow: hidden;
+  		margin: 0px 0;
+  		li{
+  			margin: 10px 0;
+  			padding:5px 3px;
+  			a{
+  				font-size: 0.8em;
+  			}
+  		}
+  		.active{
+  			background-color:#212121;
+  		}
+  	}
+  	.hamburgers{
+  		display: flex;
+  		flex-direction: column;
+  		justify-content:center;
+  	}
+}
+  	}
+  
+.banner{
+	display: flex;
+	align-items:center;
+	.texts{
+		height:300px;
+	}
+	h2{
+		font-size: 1em;
+	}
+	h4{
+		font-size:1.5em;
+		width:90vw;
+	}
+}
+.wwd{
+	
+	.knowAboutUs{
+		width:100vw;
+		h3{
+			font-size:1.8em;
+		}
+		p{
+			width:90vw;
+			font-size:0.9em;
+		}
+	}
+	.theBest{
+		height:650px;
+		img{
+			display: none;
+		}
+		.text{
+			width:80vw;
+			text-align: center;
+		}
+	}
+}
+.skills{
+	align-items:center;
+	padding:30px;
+	background:rgba(0,0,0,0.9);
+	background-size:780px 520px;
+	height:auto;
+	.skill{
+	margin-right: 10px;
+	margin-bottom:50px;
+}
+}
+}

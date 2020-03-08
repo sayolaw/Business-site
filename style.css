@@ -8,37 +8,39 @@ body {
 .navbar {
   background-color: #222422;
   color: white; }
-  .navbar nav .brand {
-    font-size: 1.7em;
-    letter-spacing: 3px;
-    font-weight: bold; }
-  .navbar nav .links {
-    list-style: none;
-    font-family: raleway;
-    font-weight: 500;
-    margin: 0 0 0 50px; }
-    .navbar nav .links li a {
-      font-size: 0.7em;
-      color: white;
-      padding-bottom: 2px;
-      border-bottom: gold; }
-    .navbar nav .links li a:hover {
-      border-bottom: 2px solid gold; }
-  .navbar nav .hamburgers {
-    display: none;
-    cursor: pointer;
-    margin: 0;
-    list-style: none;
-    transform: rotateY(180deg); }
-    .navbar nav .hamburgers li {
-      width: 25px;
-      height: 2px;
-      background-color: white; }
-    .navbar nav .hamburgers #ham-2 {
-      width: 20px;
-      margin: 3px 0; }
-    .navbar nav .hamburgers #ham-3 {
-      width: 15px; }
+  .navbar nav {
+    width: 100vw; }
+    .navbar nav .brand {
+      font-size: 1.7em;
+      letter-spacing: 3px;
+      font-weight: bold; }
+    .navbar nav .links {
+      list-style: none;
+      font-family: raleway;
+      font-weight: 500;
+      margin: 0 0 0 50px; }
+      .navbar nav .links li a {
+        font-size: 0.7em;
+        color: white;
+        padding-bottom: 2px;
+        border-bottom: gold; }
+      .navbar nav .links li a:hover {
+        border-bottom: 2px solid gold; }
+    .navbar nav .hamburgers {
+      display: none;
+      cursor: pointer;
+      margin: 0;
+      list-style: none;
+      transform: rotateY(180deg); }
+      .navbar nav .hamburgers li {
+        width: 25px;
+        height: 2px;
+        background-color: white; }
+      .navbar nav .hamburgers #ham-2 {
+        width: 20px;
+        margin: 3px 0; }
+      .navbar nav .hamburgers #ham-3 {
+        width: 15px; }
 
 /* banner section*/
 .banner {
@@ -62,69 +64,129 @@ body {
       color: #402d0e; }
 
 /* what we do section*/
-.wwd {
-  height: 1000px; }
-  .wwd .knowAboutUs {
+.wwd .knowAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px; }
+  .wwd .knowAboutUs h3 {
+    font-size: 2.2em;
+    color: #402d0e; }
+  .wwd .knowAboutUs .underline {
+    margin: 30px;
+    background-color: #402d0e;
+    width: 50px;
+    height: 5px; }
+  .wwd .knowAboutUs p {
+    color: #222422;
+    font-size: 1.1em;
+    width: 40vw;
+    line-height: 200%; }
+.wwd .theBest {
+  height: 550px;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #fafafa;
+  display: flex; }
+  .wwd .theBest img {
+    width: 640px;
+    height: 550px; }
+  .wwd .theBest .text {
+    padding: 50px 0;
+    margin-left: 10vw; }
+    .wwd .theBest .text h3 {
+      color: #402d0e;
+      letter-spacing: 3px; }
+    .wwd .theBest .text p {
+      margin: 20px 0;
+      line-height: 200%;
+      font-size: 1em; }
+.wwd .service {
+  margin-top: 100px;
+  text-align: center; }
+  .wwd .service .overview {
+    margin: 0 auto; }
+    .wwd .service .overview h3 {
+      color: #402d0e;
+      letter-spacing: 3px; }
+    .wwd .service .overview p {
+      margin: 20px 0;
+      line-height: 200%;
+      font-size: 1em; }
+  .wwd .service ul .services {
+    margin-top: 50px; }
+    .wwd .service ul .services h3 {
+      margin: 20px 0;
+      color: #402d0e;
+      letter-spacing: 3px; }
+    .wwd .service ul .services p {
+      font-size: 0.8em;
+      line-height: 200%; }
+
+.skills {
+  height: 450px;
+  margin-top: 100px;
+  background: url("Images/background.jpg") rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-size: 1280px 720px;
+  background-position: center;
+  justify-content: center; }
+  .skills .skill {
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 300px; }
-    .wwd .knowAboutUs h3 {
-      font-size: 2.2em;
-      color: #402d0e; }
-    .wwd .knowAboutUs .underline {
-      margin: 30px;
-      background-color: #402d0e;
-      width: 50px;
-      height: 5px; }
-    .wwd .knowAboutUs p {
-      color: #222422;
-      font-size: 1.1em;
-      width: 40vw;
-      line-height: 200%; }
-  .wwd .theBest {
-    height: 550px;
-    margin: 0;
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: #fafafa;
-    display: flex; }
-    .wwd .theBest img {
-      width: 640px;
-      height: 550px; }
-    .wwd .theBest .text {
-      padding: 50px 0;
-      margin-left: 10vw; }
-      .wwd .theBest .text h3 {
-        color: #402d0e;
-        letter-spacing: 3px; }
-      .wwd .theBest .text p {
-        margin: 20px 0;
-        line-height: 200%;
-        font-size: 1em; }
-  .wwd .service {
-    margin-top: 100px;
-    text-align: center; }
-    .wwd .service .overview {
-      margin: 0 auto; }
-      .wwd .service .overview h3 {
-        color: #402d0e;
-        letter-spacing: 3px; }
-      .wwd .service .overview p {
-        margin: 20px 0;
-        line-height: 200%;
-        font-size: 1em; }
-    .wwd .service ul .services {
-      margin-top: 50px; }
-      .wwd .service ul .services h3 {
-        margin: 20px 0;
-        color: #402d0e;
-        letter-spacing: 3px; }
-      .wwd .service ul .services p {
-        font-size: 0.8em;
-        line-height: 200%; }
+    justify-content: center; }
+    .skills .skill h3 {
+      margin-top: 30px;
+      color: white;
+      font-size: 0.8em; }
+    .skills .skill .contain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      border: 2px solid #d9c89e;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      padding: 2px;
+      overflow: hidden; }
+      .skills .skill .contain .percent {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        background-color: black;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .skills .skill .contain .percent .gauge {
+          position: relative;
+          top: 0px;
+          width: 10px;
+          height: 11px;
+          z-index: 0;
+          background-color: white; }
+        .skills .skill .contain .percent .circle {
+          position: absolute;
+          z-index: 2;
+          transform: translateY(2px);
+          width: 136px;
+          height: 136px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white; }
+          .skills .skill .contain .percent .circle h2 {
+            font-size: 0.9em; }
 
 /* For mobile screens*/
 @media screen and (max-width: 767px) {
@@ -155,21 +217,29 @@ body {
       font-size: 1.5em;
       width: 90vw; }
 
-  .wwd {
-    height: 1500px; }
-    .wwd .knowAboutUs {
-      width: 100vw; }
-      .wwd .knowAboutUs h3 {
-        font-size: 1.8em; }
-      .wwd .knowAboutUs p {
-        width: 90vw;
-        font-size: 0.9em; }
-    .wwd .theBest {
-      height: 650px; }
-      .wwd .theBest img {
-        display: none; }
-      .wwd .theBest .text {
-        width: 80vw;
-        text-align: center; } }
+  .wwd .knowAboutUs {
+    width: 100vw; }
+    .wwd .knowAboutUs h3 {
+      font-size: 1.8em; }
+    .wwd .knowAboutUs p {
+      width: 90vw;
+      font-size: 0.9em; }
+  .wwd .theBest {
+    height: 650px; }
+    .wwd .theBest img {
+      display: none; }
+    .wwd .theBest .text {
+      width: 80vw;
+      text-align: center; }
+
+  .skills {
+    align-items: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.9);
+    background-size: 780px 520px;
+    height: auto; }
+    .skills .skill {
+      margin-right: 10px;
+      margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
