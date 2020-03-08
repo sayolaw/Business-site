@@ -1,7 +1,7 @@
 $grey:#222422;
 $brown:#402d0e;
 $light:#fafafa;
-$baige:#d9c89e;
+$baige:#bfb38f;
 body{
 	margin:0;
 	font-family: raleway;
@@ -87,7 +87,8 @@ body{
 		line-height: 150%;
 		font-weight: 300;
 		.emphasize{
-			color:$brown;
+			font-weight:500;
+			color:$baige;
 		}
 	}
 }

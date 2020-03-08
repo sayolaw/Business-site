@@ -61,7 +61,8 @@ body {
     line-height: 150%;
     font-weight: 300; }
     .banner h4 .emphasize {
-      color: #402d0e; }
+      font-weight: 500;
+      color: #bfb38f; }
 
 /* what we do section*/
 .wwd .knowAboutUs {
@@ -149,7 +150,7 @@ body {
       align-items: center;
       justify-content: center;
       background-color: black;
-      border: 2px solid #d9c89e;
+      border: 2px solid #bfb38f;
       width: 150px;
       height: 150px;
       border-radius: 50%;
