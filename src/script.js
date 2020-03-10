@@ -136,11 +136,11 @@ function Skills(props){
 	return(
 		<div className="skills row">
 
-			<Skill className="full" number="90" skill="Management" />
-			<Skill  number="70" skill="Marketing" />
-			<Skill  number="63" skill="Research" />
-			<Skill  number="87" skill="Consultancy" />
-			<Skill  number="23" skill="Promotion" />
+			<Skill number="90" skill="Management" />
+			<Skill number="70" skill="Marketing" />
+			<Skill number="63" skill="Research" />
+			<Skill number="87" skill="Consultancy" />
+			<Skill number="23" skill="Promotion" />
 		</div>)
 }
 

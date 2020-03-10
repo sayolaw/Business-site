@@ -222,7 +222,7 @@ function Skills(props) {
 		return React.createElement(
 				"div",
 				{ className: "skills row" },
-				React.createElement(Skill, { className: "full", number: "90", skill: "Management" }),
+				React.createElement(Skill, { number: "90", skill: "Management" }),
 				React.createElement(Skill, { number: "70", skill: "Marketing" }),
 				React.createElement(Skill, { number: "63", skill: "Research" }),
 				React.createElement(Skill, { number: "87", skill: "Consultancy" }),

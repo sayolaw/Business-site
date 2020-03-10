@@ -186,9 +186,7 @@ body{
 }
 
 .skills{
-	.full{
-		display:none;
-	}
+
 	height:450px;
 	margin-top:100px;
 	background:url('Images/background.jpg') rgba(0, 0, 0, 0.7);
@@ -441,6 +439,9 @@ body{
 
 /* For mobile screens*/
 @media screen and (max-width: 767px) {
+	.container-fluid{
+		padding:0 14px;
+	}
   .navbar{
   	nav{
   	padding-left:20px;
@@ -496,7 +497,7 @@ body{
 	}
 	.theBest{
 		height:650px;
-		margin-left:15px;
+		
 		img{
 			display: none;
 		}
@@ -508,7 +509,7 @@ body{
 }
 .skills{
 	align-items:center;
-	padding:30px;
+	padding:50px;
 	background:rgba(0,0,0,0.9);
 	background-size:780px 520px;
 	height:auto;
@@ -557,7 +558,9 @@ body{
 	}
 }
 .team{
-
+	width:100vw;
+	margin-left: -14px;
+	padding:0;
 	.members{
 		padding:30px;
 		.member{

@@ -135,8 +135,6 @@ body {
   background-size: 1280px 720px;
   background-position: center;
   justify-content: center; }
-  .skills .full {
-    display: none; }
   .skills .skill {
     margin-right: 50px;
     display: flex;
@@ -321,6 +319,9 @@ body {
 
 /* For mobile screens*/
 @media screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0 14px; }
+
   .navbar nav {
     padding-left: 20px; }
     .navbar nav .links {
@@ -359,8 +360,7 @@ body {
       width: 90vw;
       font-size: 0.9em; }
   .wwd .theBest, .recents .theBest, .team .theBest {
-    height: 650px;
-    margin-left: 15px; }
+    height: 650px; }
     .wwd .theBest img, .recents .theBest img, .team .theBest img {
       display: none; }
     .wwd .theBest .text, .recents .theBest .text, .team .theBest .text {
@@ -369,7 +369,7 @@ body {
 
   .skills {
     align-items: center;
-    padding: 30px;
+    padding: 50px;
     background: rgba(0, 0, 0, 0.9);
     background-size: 780px 520px;
     height: auto; }
@@ -401,12 +401,16 @@ body {
     .twitter .images img {
       margin-bottom: 30px; }
 
-  .team .members {
-    padding: 30px; }
-    .team .members .member {
-      margin-right: 0;
-      margin-bottom: 30px; }
-      .team .members .member .image .socials {
-        opacity: 0.3; } }
+  .team {
+    width: 100vw;
+    margin-left: -14px;
+    padding: 0; }
+    .team .members {
+      padding: 30px; }
+      .team .members .member {
+        margin-right: 0;
+        margin-bottom: 30px; }
+        .team .members .member .image .socials {
+          opacity: 0.3; } }
 
 /*# sourceMappingURL=style.css.map */
