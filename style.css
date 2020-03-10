@@ -393,11 +393,9 @@ body {
       opacity: 1; }
 
   .twitter {
-    margin: 50px 0;
-    padding: 30px; }
+    margin: 50px 0; }
     .twitter .info {
-      margin-bottom: 50px;
-      padding: 20px; }
+      margin-bottom: 50px; }
     .twitter .images img {
       margin-bottom: 30px; }
 
