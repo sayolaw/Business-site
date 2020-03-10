@@ -384,9 +384,9 @@ function Team(props) {
 				React.createElement(
 						"div",
 						{ className: "row members align-items-center justify-content-center" },
-						React.createElement(Member, { name: "TONI LAW", position: "CEO", twitter: "", facebook: "", linkedin: "", image: "Images/member.jpg" }),
-						React.createElement(Member, { name: "SAYO LAW", position: "CREATIVE DIRECTOR", twitter: "", facebook: "", linkedin: "", image: "Images/member.jpg" }),
-						React.createElement(Member, { name: "TOSIN LAW", position: "CEO", twitter: "", facebook: "", linkedin: "", image: "Images/member.jpg" })
+						React.createElement(Member, { name: "TONI LAW", position: "CEO", twitter: "", facebook: "", linkedin: "", image: "Images/member2.jpg" }),
+						React.createElement(Member, { name: "SAYO LAW", position: "CREATIVE DIRECTOR", twitter: "", facebook: "", linkedin: "", image: "Images/member2.jpg" }),
+						React.createElement(Member, { name: "TOSIN LAW", position: "CEO", twitter: "", facebook: "", linkedin: "", image: "Images/member2.jpg" })
 				)
 		);
 }

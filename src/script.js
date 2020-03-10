@@ -228,9 +228,9 @@ function Team(props){
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 			</div>
 		<div className="row members align-items-center justify-content-center">
-		<Member name="TONI LAW" position="CEO" twitter="" facebook="" linkedin="" image="Images/member.jpg" />
-		<Member name="SAYO LAW" position="CREATIVE DIRECTOR" twitter="" facebook="" linkedin="" image="Images/member.jpg" />
-		<Member name="TOSIN LAW" position="CEO" twitter="" facebook="" linkedin="" image="Images/member.jpg" />
+		<Member name="TONI LAW" position="CEO" twitter="" facebook="" linkedin="" image="Images/member2.jpg" />
+		<Member name="SAYO LAW" position="CREATIVE DIRECTOR" twitter="" facebook="" linkedin="" image="Images/member2.jpg" />
+		<Member name="TOSIN LAW" position="CEO" twitter="" facebook="" linkedin="" image="Images/member2.jpg" />
 		</div>
 		</div>
 
