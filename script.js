@@ -435,6 +435,169 @@ function Member(props) {
 				)
 		);
 }
+
+function Reviews(props) {
+		return React.createElement(
+				"div",
+				{ className: "reviews" },
+				React.createElement(
+						"h4",
+						null,
+						"WHAT OUR CLIENTS ARE SAYING"
+				),
+				React.createElement(
+						"div",
+						{ className: "container" },
+						React.createElement(
+								"div",
+								{ id: "container" },
+								React.createElement(
+										"div",
+										{ className: "info" },
+										React.createElement(
+												"p",
+												null,
+												"\"It was a pleasure to work with Sayo, He is very dedicated, creative with an eye for detail, i thorough professional, He more than exceeded our expectations...would totally recommend\""
+										),
+										React.createElement(
+												"p",
+												null,
+												"John Doe"
+										),
+										React.createElement(
+												"a",
+												{ href: "https://www.google.com" },
+												"www.google.com"
+										)
+								),
+								React.createElement(
+										"div",
+										{ className: "info" },
+										React.createElement(
+												"p",
+												null,
+												"\"It was a pleasure to work with Sayo, He is very dedicated, creative with an eye for detail, i thorough professional, He more than exceeded our expectations...would totally recommend\""
+										),
+										React.createElement(
+												"p",
+												null,
+												"James Doe"
+										),
+										React.createElement(
+												"a",
+												{ href: "https://www.google.com" },
+												"www.google.com"
+										)
+								),
+								React.createElement(
+										"div",
+										{ className: "info" },
+										React.createElement(
+												"p",
+												null,
+												"\"It was a pleasure to work with Sayo, He is very dedicated, creative with an eye for detail, i thorough professional, He more than exceeded our expectations...would totally recommend\""
+										),
+										React.createElement(
+												"p",
+												null,
+												"John Doe"
+										),
+										React.createElement(
+												"a",
+												{ href: "https://www.google.com" },
+												"www.google.com"
+										)
+								)
+						)
+				)
+		);
+}
+
+function Blog(props) {
+		return React.createElement(
+				"div",
+				{ className: "blog" },
+				React.createElement(
+						"div",
+						{ className: "writeup" },
+						React.createElement(
+								"h3",
+								null,
+								"OUR BLOG"
+						),
+						React.createElement("div", { className: "underline" }),
+						React.createElement(
+								"p",
+								null,
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+						)
+				),
+				React.createElement(Posts, { title: "Lorem ipsum dolor sit amet",
+						image: "Images/background.jpg",
+						date: "10 April 2014",
+						message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" }),
+				React.createElement(PostsR, { title: "Lorem ipsum dolor sit amet",
+						image: "Images/background.jpg",
+						date: "10 April 2014",
+						message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" }),
+				React.createElement(Posts, { title: "Lorem ipsum dolor sit amet",
+						image: "Images/background.jpg",
+						date: "10 April 2014",
+						message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" })
+		);
+}
+function Posts(props) {
+		return React.createElement(
+				"div",
+				{ className: "posts row justify-content-center" },
+				React.createElement("img", { src: props.image, className: "col-md-4" }),
+				React.createElement(
+						"div",
+						{ className: "info col-md-5" },
+						React.createElement(
+								"p",
+								{ className: "date" },
+								props.date
+						),
+						React.createElement(
+								"h4",
+								null,
+								props.title
+						),
+						React.createElement(
+								"p",
+								null,
+								props.message
+						)
+				)
+		);
+}
+function PostsR(props) {
+		return React.createElement(
+				"div",
+				{ className: "posts postsr row justify-content-center" },
+				React.createElement(
+						"div",
+						{ className: "info col-md-4" },
+						React.createElement(
+								"p",
+								{ className: "date" },
+								props.date
+						),
+						React.createElement(
+								"h4",
+								null,
+								props.title
+						),
+						React.createElement(
+								"p",
+								null,
+								props.message
+						)
+				),
+				React.createElement("img", { src: props.image, className: "col-md-5" })
+		);
+}
 function App(props) {
 		return React.createElement(
 				"div",
@@ -445,7 +608,9 @@ function App(props) {
 				React.createElement(Skills, null),
 				React.createElement(Recents, null),
 				React.createElement(Twitter, null),
-				React.createElement(Team, null)
+				React.createElement(Team, null),
+				React.createElement(Reviews, null),
+				React.createElement(Blog, null)
 		);
 }
 

@@ -333,7 +333,7 @@ body{
 }
 .twitter{
 	padding:0;
-	overflow-x: hidden;
+	
 	margin-top: -20px;
 	text-align: center;
 	a{
@@ -433,6 +433,70 @@ body{
 			opacity:1;
 		}
 	}
+	}
+}
+.reviews{
+	h4{
+		margin-top:30px;
+	}
+	margin-top: 50px;
+	padding:30px;
+	color:white;
+	background-color:black;
+	@extend .twitter;
+	.container{
+		
+		width:62vw;
+		overflow-x: hidden;
+		padding:0;
+		#container{
+			
+			display: flex;
+			padding:0;
+			
+			
+		}
+
+	}
+	.info{
+		
+		width:60vw;
+		padding:0px;
+		margin-right: 2vw;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		p{
+		padding:0;
+		margin:10px 0;
+		width:60vw;
+	}
+	
+	}
+	
+}
+
+.blog{
+	@extend .wwd;
+	.posts{
+		margin-bottom: 50px;
+		.info{
+			.date{
+				color:$brown;
+			}
+		h4{
+			color:$brown;
+			font-size: 1.2em;
+		}
+		p{
+			line-height: 200%;
+			font-size:0.9em;
+			color:grey;
+		}
+		}
+	}
+	.postsr{
+		text-align: right;
 	}
 }
 
@@ -572,6 +636,18 @@ body{
 			}
 			}
 		}
+	}
+}
+.blog{
+	text-align: center;
+	.date{
+		margin-top: 10px;
+	}
+	.postsr{
+		text-align: center;
+	}
+	.writeup{
+		margin-left: -14px;
 	}
 }
 }

@@ -62,6 +62,22 @@
 
 		}
 	})
-  
+  /*Javascript function to animate comments slider */
+   var val = 0;
+  setInterval(function(){
+  val=val+62;
+  if(val>124){
+  	var sliderVal="0vw"
+  	val=0;
+  }
+  else{
+  		
+  		var sliderVal= "-"+val +"vw"
+  }
+  $('#container').animate({
+  	marginLeft : sliderVal
+  },1000)
+  },3000)
+ 
 </script>
 </html>

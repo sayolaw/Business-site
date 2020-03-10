@@ -255,6 +255,90 @@ function Member(props){
 		</div>
 		)
 }
+
+function Reviews(props){
+	return(
+		<div className="reviews">
+		<h4>WHAT OUR CLIENTS ARE SAYING</h4>
+		<div className="container">
+		<div id="container">
+		<div className="info">
+		
+		<p>"It was a pleasure to work with Sayo, He is very dedicated, creative 
+		with an eye for detail, i thorough professional, He more than exceeded our expectations...would totally recommend"</p>
+		<p>John Doe</p>
+		<a href="https://www.google.com">www.google.com</a>
+		</div>
+		<div className="info">
+		
+		<p>"It was a pleasure to work with Sayo, He is very dedicated, creative 
+		with an eye for detail, i thorough professional, He more than exceeded our expectations...would totally recommend"</p>
+		<p>James Doe</p>
+		<a href="https://www.google.com">www.google.com</a>
+		</div>
+		<div className="info">
+		
+		<p>"It was a pleasure to work with Sayo, He is very dedicated, creative 
+		with an eye for detail, i thorough professional, He more than exceeded our expectations...would totally recommend"</p>
+		<p>John Doe</p>
+		<a href="https://www.google.com">www.google.com</a>
+		</div>
+		</div>
+		</div>
+		</div>
+		)
+}
+
+function Blog(props){
+	return(
+		<div className="blog">
+		<div className="writeup">
+			<h3>OUR BLOG</h3>
+			<div className="underline">
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+			</div>
+		<Posts title="Lorem ipsum dolor sit amet" 
+		image="Images/background.jpg" 
+		date="10 April 2014" 
+		message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" />
+		<PostsR title="Lorem ipsum dolor sit amet" 
+		image="Images/background.jpg" 
+		date="10 April 2014" 
+		message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" />
+		<Posts title="Lorem ipsum dolor sit amet" 
+		image="Images/background.jpg" 
+		date="10 April 2014" 
+		message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" />
+		</div>
+		)
+}
+function Posts(props){
+	return(
+		<div className="posts row justify-content-center">
+		<img src={props.image} className="col-md-4" />
+		<div className="info col-md-5">
+		<p className="date">{props.date}</p>
+		<h4>{props.title}</h4>
+		<p>{props.message}</p>
+		</div>
+		</div>
+
+		)
+}
+function PostsR(props){
+	return(
+		<div className="posts postsr row justify-content-center">
+		<div className="info col-md-4">
+		<p className="date">{props.date}</p>
+		<h4>{props.title}</h4>
+		<p>{props.message}</p>
+		</div>
+		<img src={props.image} className="col-md-5" />
+		</div>
+
+		)
+}
 function App(props){
 	return(
 		<div className="app">
@@ -265,6 +349,8 @@ function App(props){
 		<Recents />
 		<Twitter />
 		<Team />
+		<Reviews />
+		<Blog />
 		</div>
 		)
 }

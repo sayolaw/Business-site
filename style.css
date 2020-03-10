@@ -65,65 +65,65 @@ body {
       color: #bfb38f; }
 
 /* what we do section*/
-.wwd .writeup, .recents .writeup, .team .writeup {
+.wwd .writeup, .recents .writeup, .team .writeup, .blog .writeup {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 300px; }
-  .wwd .writeup h3, .recents .writeup h3, .team .writeup h3 {
+  .wwd .writeup h3, .recents .writeup h3, .team .writeup h3, .blog .writeup h3 {
     font-size: 2.2em;
     color: #402d0e; }
-  .wwd .writeup .underline, .recents .writeup .underline, .team .writeup .underline {
+  .wwd .writeup .underline, .recents .writeup .underline, .team .writeup .underline, .blog .writeup .underline {
     margin: 30px;
     background-color: #402d0e;
     width: 50px;
     height: 5px; }
-  .wwd .writeup p, .recents .writeup p, .team .writeup p {
+  .wwd .writeup p, .recents .writeup p, .team .writeup p, .blog .writeup p {
     color: #222422;
     font-size: 1.1em;
     width: 40vw;
     line-height: 200%; }
-.wwd .theBest, .recents .theBest, .team .theBest {
+.wwd .theBest, .recents .theBest, .team .theBest, .blog .theBest {
   height: 550px;
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
   background-color: #fafafa;
   display: flex; }
-  .wwd .theBest img, .recents .theBest img, .team .theBest img {
+  .wwd .theBest img, .recents .theBest img, .team .theBest img, .blog .theBest img {
     width: 640px;
     height: 550px; }
-  .wwd .theBest .text, .recents .theBest .text, .team .theBest .text {
+  .wwd .theBest .text, .recents .theBest .text, .team .theBest .text, .blog .theBest .text {
     padding: 50px 0;
     margin-left: 10vw; }
-    .wwd .theBest .text h3, .recents .theBest .text h3, .team .theBest .text h3 {
+    .wwd .theBest .text h3, .recents .theBest .text h3, .team .theBest .text h3, .blog .theBest .text h3 {
       color: #402d0e;
       letter-spacing: 3px; }
-    .wwd .theBest .text p, .recents .theBest .text p, .team .theBest .text p {
+    .wwd .theBest .text p, .recents .theBest .text p, .team .theBest .text p, .blog .theBest .text p {
       margin: 20px 0;
       line-height: 200%;
       font-size: 1em; }
-.wwd .service, .recents .service, .team .service {
+.wwd .service, .recents .service, .team .service, .blog .service {
   margin-top: 100px;
   text-align: center; }
-  .wwd .service .overview, .recents .service .overview, .team .service .overview {
+  .wwd .service .overview, .recents .service .overview, .team .service .overview, .blog .service .overview {
     margin: 0 auto; }
-    .wwd .service .overview h3, .recents .service .overview h3, .team .service .overview h3 {
+    .wwd .service .overview h3, .recents .service .overview h3, .team .service .overview h3, .blog .service .overview h3 {
       color: #402d0e;
       letter-spacing: 3px; }
-    .wwd .service .overview p, .recents .service .overview p, .team .service .overview p {
+    .wwd .service .overview p, .recents .service .overview p, .team .service .overview p, .blog .service .overview p {
       margin: 20px 0;
       line-height: 200%;
       font-size: 1em; }
-  .wwd .service ul .services, .recents .service ul .services, .team .service ul .services {
+  .wwd .service ul .services, .recents .service ul .services, .team .service ul .services, .blog .service ul .services {
     margin-top: 50px; }
-    .wwd .service ul .services h3, .recents .service ul .services h3, .team .service ul .services h3 {
+    .wwd .service ul .services h3, .recents .service ul .services h3, .team .service ul .services h3, .blog .service ul .services h3 {
       margin: 20px 0;
       color: #402d0e;
       letter-spacing: 3px; }
-    .wwd .service ul .services p, .recents .service ul .services p, .team .service ul .services p {
+    .wwd .service ul .services p, .recents .service ul .services p, .team .service ul .services p, .blog .service ul .services p {
       font-size: 0.8em;
       line-height: 200%; }
 
@@ -242,28 +242,27 @@ body {
   padding: 0;
   margin-left: 0; }
 
-.twitter {
+.twitter, .reviews {
   padding: 0;
-  overflow-x: hidden;
   margin-top: -20px;
   text-align: center; }
-  .twitter a {
+  .twitter a, .reviews a {
     margin: 0 auto; }
-  .twitter .row {
+  .twitter .row, .reviews .row {
     padding: 0; }
-    .twitter .row .col-md-3 {
+    .twitter .row .col-md-3, .reviews .row .col-md-3 {
       padding: 0;
       height: 250px; }
-  .twitter .info {
+  .twitter .info, .reviews .info {
     justify-content: center;
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
     height: 300px; }
-    .twitter .info p {
+    .twitter .info p, .reviews .info p {
       margin: 30px 0; }
-  .twitter .button {
+  .twitter .button, .reviews .button {
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -317,6 +316,46 @@ body {
     cursor: pointer;
     opacity: 1; }
 
+.reviews {
+  margin-top: 50px;
+  padding: 30px;
+  color: white;
+  background-color: black; }
+  .reviews h4 {
+    margin-top: 30px; }
+  .reviews .container {
+    width: 62vw;
+    overflow-x: hidden;
+    padding: 0; }
+    .reviews .container #container {
+      display: flex;
+      padding: 0; }
+  .reviews .info {
+    width: 60vw;
+    padding: 0px;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .reviews .info p {
+      padding: 0;
+      margin: 10px 0;
+      width: 60vw; }
+
+.blog .posts {
+  margin-bottom: 50px; }
+  .blog .posts .info .date {
+    color: #402d0e; }
+  .blog .posts .info h4 {
+    color: #402d0e;
+    font-size: 1.2em; }
+  .blog .posts .info p {
+    line-height: 200%;
+    font-size: 0.9em;
+    color: grey; }
+.blog .postsr {
+  text-align: right; }
+
 /* For mobile screens*/
 @media screen and (max-width: 767px) {
   .container-fluid {
@@ -352,18 +391,18 @@ body {
       font-size: 1.5em;
       width: 90vw; }
 
-  .wwd .writeup, .recents .writeup, .team .writeup {
+  .wwd .writeup, .recents .writeup, .team .writeup, .blog .writeup {
     width: 100vw; }
-    .wwd .writeup h3, .recents .writeup h3, .team .writeup h3 {
+    .wwd .writeup h3, .recents .writeup h3, .team .writeup h3, .blog .writeup h3 {
       font-size: 1.8em; }
-    .wwd .writeup p, .recents .writeup p, .team .writeup p {
+    .wwd .writeup p, .recents .writeup p, .team .writeup p, .blog .writeup p {
       width: 90vw;
       font-size: 0.9em; }
-  .wwd .theBest, .recents .theBest, .team .theBest {
+  .wwd .theBest, .recents .theBest, .team .theBest, .blog .theBest {
     height: 650px; }
-    .wwd .theBest img, .recents .theBest img, .team .theBest img {
+    .wwd .theBest img, .recents .theBest img, .team .theBest img, .blog .theBest img {
       display: none; }
-    .wwd .theBest .text, .recents .theBest .text, .team .theBest .text {
+    .wwd .theBest .text, .recents .theBest .text, .team .theBest .text, .blog .theBest .text {
       width: 80vw;
       text-align: center; }
 
@@ -392,12 +431,12 @@ body {
     .recents .projects .project .info {
       opacity: 1; }
 
-  .twitter {
+  .twitter, .reviews {
     margin: 50px 0; }
-    .twitter .info {
+    .twitter .info, .reviews .info {
       margin-bottom: 50px;
       padding: 15px; }
-    .twitter .images img {
+    .twitter .images img, .reviews .images img {
       margin-bottom: 30px; }
 
   .team {
@@ -410,6 +449,15 @@ body {
         margin-right: 0;
         margin-bottom: 30px; }
         .team .members .member .image .socials {
-          opacity: 0.3; } }
+          opacity: 0.3; }
+
+  .blog {
+    text-align: center; }
+    .blog .date {
+      margin-top: 10px; }
+    .blog .postsr {
+      text-align: center; }
+    .blog .writeup {
+      margin-left: -14px; } }
 
 /*# sourceMappingURL=style.css.map */
