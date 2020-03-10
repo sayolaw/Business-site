@@ -125,7 +125,7 @@ function Wwd(props) {
 				{ className: "wwd row justify-content-md-center" },
 				React.createElement(
 						"div",
-						{ className: "knowAboutUs" },
+						{ className: "writeup" },
 						React.createElement(
 								"h3",
 								null,
@@ -222,7 +222,7 @@ function Skills(props) {
 		return React.createElement(
 				"div",
 				{ className: "skills row" },
-				React.createElement(Skill, { number: "90", skill: "Management" }),
+				React.createElement(Skill, { className: "full", number: "90", skill: "Management" }),
 				React.createElement(Skill, { number: "70", skill: "Marketing" }),
 				React.createElement(Skill, { number: "63", skill: "Research" }),
 				React.createElement(Skill, { number: "87", skill: "Consultancy" }),
@@ -264,6 +264,177 @@ function Skill(props) {
 				)
 		);
 }
+
+{/*Recent Projects*/}
+function Recents(props) {
+		return React.createElement(
+				"div",
+				{ className: "recents col-md-12" },
+				React.createElement(
+						"div",
+						{ className: "writeup" },
+						React.createElement(
+								"h3",
+								null,
+								"SOME RECENT PROJECTS"
+						),
+						React.createElement("div", { className: "underline" }),
+						React.createElement(
+								"p",
+								null,
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+						)
+				),
+				React.createElement(
+						"div",
+						{ className: "projects row col-md-12" },
+						React.createElement(Project, { name: "PAPERCLIPS", category: "BRANDING", image: "Images/image1.jpg" }),
+						React.createElement(Project, { name: "SPACESHIP", category: "MARKETING", image: "Images/image2.jpg" }),
+						React.createElement(Project, { name: "HONEYCOMB", category: "CONSULTANCY", image: "Images/image3.jpg" }),
+						React.createElement(Project, { name: "JELLYBEAN", category: "PROMOTIOM", image: "Images/image4.jpg" })
+				)
+		);
+}
+function Project(props) {
+		return React.createElement(
+				"div",
+				{ className: "project col-md-3" },
+				React.createElement("img", { src: props.image, className: "col-md-12" }),
+				React.createElement(
+						"div",
+						{ className: "info col-md-11" },
+						React.createElement(
+								"h4",
+								null,
+								props.name
+						),
+						React.createElement("div", { className: "underline" }),
+						React.createElement(
+								"p",
+								null,
+								props.category
+						)
+				)
+		);
+}
+
+{/*twitter feed page */}
+function Twitter(props) {
+		return React.createElement(
+				"div",
+				{ className: "twitter col-md-12" },
+				React.createElement(
+						"div",
+						{ className: "info" },
+						React.createElement(
+								"h4",
+								null,
+								"LATEST FROM TWITTER"
+						),
+						React.createElement(
+								"p",
+								null,
+								"All the latest news about our products and services on twitter"
+						),
+						React.createElement(
+								"a",
+								{ href: "https://www.google.com" },
+								"www.google.com"
+						)
+				),
+				React.createElement(
+						"div",
+						{ className: "images row" },
+						React.createElement("img", { src: "Images/image1.jpg", className: "col-md-3" }),
+						React.createElement("img", { src: "Images/image2.jpg", className: "col-md-3" }),
+						React.createElement("img", { src: "Images/image3.jpg", className: "col-md-3" }),
+						React.createElement("img", { src: "Images/image4.jpg", className: "col-md-3" })
+				),
+				React.createElement(
+						"div",
+						{ className: "button col-md-12" },
+						React.createElement(
+								"button",
+								{ className: "btn btn-outline-secondary" },
+								"SEE MORE"
+						)
+				)
+		);
+}
+{/*Teams page */}
+function Team(props) {
+		return React.createElement(
+				"div",
+				{ className: "team" },
+				React.createElement(
+						"div",
+						{ className: "writeup" },
+						React.createElement(
+								"h3",
+								null,
+								"OUR TEAM MEMBERS"
+						),
+						React.createElement("div", { className: "underline" }),
+						React.createElement(
+								"p",
+								null,
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+						)
+				),
+				React.createElement(
+						"div",
+						{ className: "row members align-items-center justify-content-center" },
+						React.createElement(Member, { name: "TONI LAW", position: "CEO", twitter: "", facebook: "", linkedin: "", image: "Images/member.jpg" }),
+						React.createElement(Member, { name: "SAYO LAW", position: "CREATIVE DIRECTOR", twitter: "", facebook: "", linkedin: "", image: "Images/member.jpg" }),
+						React.createElement(Member, { name: "TOSIN LAW", position: "CEO", twitter: "", facebook: "", linkedin: "", image: "Images/member.jpg" })
+				)
+		);
+}
+{/*each members profile*/}
+function Member(props) {
+		return React.createElement(
+				"div",
+				{ className: "member col-md-3" },
+				React.createElement(
+						"div",
+						{ className: "image" },
+						React.createElement("img", { className: "col-md-12", src: props.image }),
+						React.createElement(
+								"div",
+								{ className: "socials col-md-12 row align-items-center justify-content-center" },
+								React.createElement(
+										"a",
+										{ href: props.twitter },
+										React.createElement("i", { className: "fab fa-twitter" })
+								),
+								React.createElement(
+										"a",
+										{ href: props.facebook },
+										React.createElement("i", { className: "fab fa-facebook-f" })
+								),
+								React.createElement(
+										"a",
+										{ href: props.linkedin },
+										React.createElement("i", { className: "fab fa-linkedin-in" })
+								)
+						)
+				),
+				React.createElement(
+						"div",
+						{ className: "info" },
+						React.createElement(
+								"h4",
+								null,
+								props.name
+						),
+						React.createElement(
+								"p",
+								null,
+								props.position
+						)
+				)
+		);
+}
 function App(props) {
 		return React.createElement(
 				"div",
@@ -271,7 +442,10 @@ function App(props) {
 				React.createElement(Nav, null),
 				React.createElement(Banner, null),
 				React.createElement(Wwd, null),
-				React.createElement(Skills, null)
+				React.createElement(Skills, null),
+				React.createElement(Recents, null),
+				React.createElement(Twitter, null),
+				React.createElement(Team, null)
 		);
 }
 

@@ -58,7 +58,7 @@ function Wwd(props){
 	return(
 		<div className="wwd row justify-content-md-center">
 
-		<div className="knowAboutUs">
+		<div className="writeup">
 		<h3>KNOW ABOUT US</h3>
 		<div className="underline">
 		</div>
@@ -136,11 +136,11 @@ function Skills(props){
 	return(
 		<div className="skills row">
 
-			<Skill number="90" skill="Management" />
-			<Skill number="70" skill="Marketing" />
-			<Skill number="63" skill="Research" />
-			<Skill number="87" skill="Consultancy" />
-			<Skill number="23" skill="Promotion" />
+			<Skill className="full" number="90" skill="Management" />
+			<Skill  number="70" skill="Marketing" />
+			<Skill  number="63" skill="Research" />
+			<Skill  number="87" skill="Consultancy" />
+			<Skill  number="23" skill="Promotion" />
 		</div>)
 }
 
@@ -161,6 +161,100 @@ function Skill(props){
 
 		)
 }
+
+
+{/*Recent Projects*/}
+function Recents(props){
+	return(
+		<div className="recents col-md-12">
+			<div className="writeup">
+			<h3>SOME RECENT PROJECTS</h3>
+			<div className="underline">
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+			</div>
+			<div className="projects row col-md-12">
+			<Project name="PAPERCLIPS" category="BRANDING" image="Images/image1.jpg" />
+			<Project name="SPACESHIP" category="MARKETING" image="Images/image2.jpg" />
+			<Project name="HONEYCOMB" category="CONSULTANCY" image="Images/image3.jpg"/>
+			<Project name="JELLYBEAN" category="PROMOTIOM" image="Images/image4.jpg" />
+			</div>
+			
+		</div>
+		)
+}
+function Project(props){
+	return(
+		<div className="project col-md-3">
+			<img src={props.image} className="col-md-12"/>
+			<div className="info col-md-11">
+			<h4>{props.name}</h4>
+			<div className="underline"></div>
+			<p>{props.category}</p>
+			</div>
+		</div>)
+}
+
+
+{/*twitter feed page */}
+function Twitter(props){
+	return(
+		<div className="twitter col-md-12">
+		<div className="info">
+		<h4>LATEST FROM TWITTER</h4>
+		<p>All the latest news about our products and services on twitter</p>
+		<a href="https://www.google.com">www.google.com</a>
+		</div>
+		<div className="images row">
+		<img src="Images/image1.jpg" className="col-md-3" />
+		<img src="Images/image2.jpg" className="col-md-3" />
+		<img src="Images/image3.jpg" className="col-md-3" />
+		<img src="Images/image4.jpg" className="col-md-3" />
+		</div>
+		<div className="button col-md-12">
+		<button className="btn btn-outline-secondary">SEE MORE</button>
+		</div>
+		</div>
+		)
+}
+{/*Teams page */}
+function Team(props){
+	return(
+		<div className="team">
+		<div className="writeup">
+			<h3>OUR TEAM MEMBERS</h3>
+			<div className="underline">
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+			</div>
+		<div className="row members align-items-center justify-content-center">
+		<Member name="TONI LAW" position="CEO" twitter="" facebook="" linkedin="" image="Images/member.jpg" />
+		<Member name="SAYO LAW" position="CREATIVE DIRECTOR" twitter="" facebook="" linkedin="" image="Images/member.jpg" />
+		<Member name="TOSIN LAW" position="CEO" twitter="" facebook="" linkedin="" image="Images/member.jpg" />
+		</div>
+		</div>
+
+		)
+}
+{/*each members profile*/}
+function Member(props){
+	return(
+		<div className="member col-md-3">
+		<div className="image">
+		<img className="col-md-12" src={props.image} />
+		<div className="socials col-md-12 row align-items-center justify-content-center">
+		<a href={props.twitter}><i className="fab fa-twitter"></i></a>
+		<a href={props.facebook}><i className="fab fa-facebook-f"></i></a>
+		<a href={props.linkedin}><i className="fab fa-linkedin-in"></i></a>
+		</div>
+		</div>
+		<div className="info">
+		<h4>{props.name}</h4>
+		<p>{props.position}</p>
+		</div>
+		</div>
+		)
+}
 function App(props){
 	return(
 		<div className="app">
@@ -168,6 +262,9 @@ function App(props){
 		<Banner />
 		<Wwd />
 		<Skills />
+		<Recents />
+		<Twitter />
+		<Team />
 		</div>
 		)
 }

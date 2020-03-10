@@ -3,17 +3,20 @@ $brown:#402d0e;
 $light:#fafafa;
 $baige:#bfb38f;
 body{
-	margin:0;
 	font-family: raleway;
+
+	
 
 }
 .app{
 	padding:0;
 }
 .navbar{
+	
 	background-color:$grey;
 	color:white;
 	nav{
+		overflow-x: hidden;
 		width:100vw;
 		.brand{
 			font-size: 1.7em;
@@ -65,10 +68,11 @@ body{
 
 /* banner section*/
 .banner{
-	padding:0;
+	
 	height:523px;
 	background-color:black;
 	color:white;
+	padding:0 20px;
 	.texts{
 		.btn-primary{
 		background-color:$grey  !important;
@@ -95,8 +99,8 @@ body{
 
 /* what we do section*/
 .wwd{
-
-	.knowAboutUs{
+	
+	.writeup{
 		display: flex;
 		flex-direction: column;
 		align-items:center;
@@ -182,6 +186,9 @@ body{
 }
 
 .skills{
+	.full{
+		display:none;
+	}
 	height:450px;
 	margin-top:100px;
 	background:url('Images/background.jpg') rgba(0, 0, 0, 0.7);
@@ -189,7 +196,6 @@ body{
 	background-size:1280px 720px;
 	background-position:center;
 	justify-content: center;
-
 	.skill{
 		margin-right:50px;
 		display: flex;
@@ -256,12 +262,188 @@ body{
 }
 }
 
+.recents{
+	padding:0;
+	overflow-x: hidden;
+	@extend .wwd;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	.row{
+		padding:0;
+	}
+	.projects{
+		padding:0;
+		width:100vw;
+		overflow-x: hidden;
+		.col-md-3{
+			padding:0;
+		}
+		.project{
+			height:200px;
+			overflow-y: hidden;
+			margin-bottom: 20px;
+			.col-md-12{
+				padding:0;
+			}
+			img{
+				height:200px;
+				
+			}
+			.info{
+				display: flex;
+				opacity: 0;
+				z-index:1;
+				flex-direction: column;
+				align-items:center;
+				justify-content: center;
+				color:white;
+				height:180px;
+				background:rgba(0,0,0,0.8);
+				position:relative;
+				top:-190px;
+				margin:0 auto;
+				margin-bottom: -200px
+				h4{
+					font-size: 1.2em;
+				}
+				p{
+					font-size: 0.8em;
+				}
+				.underline{
+					margin: 10px;
+					background:white;
+					width:30px;
+					height:5px;
+
+				}
+			}
+		}
+		.project:hover{
+			.info{
+				cursor: pointer;
+				opacity:1;
+			}
+		}
+	}
+	
+}
+.container-fluid{
+	overflow-x: hidden;
+	padding:0;
+	margin-left:0;
+}
+.twitter{
+	padding:0;
+	overflow-x: hidden;
+	margin-top: -20px;
+	text-align: center;
+	a{
+		margin:0 auto;
+	}
+	.row{
+		padding:0;
+		.col-md-3{
+			padding:0;
+			height:250px;
+		}
+	}
+	.info{
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		background-color:black;
+		color:white;
+		height: 300px;
+		p{
+			margin:30px 0;
+		}
+	}
+	.images{
+
+	}
+
+	.button{
+		height:200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
+}
+
+.team{
+	
+	@extend .wwd;
+	background-color:$light;
+	.members{
+	
+		.member{
+			margin-right: 20px;
+			padding:0;
+			.image{
+				height:250px;
+				overflow-y: hidden;
+				img{
+					padding:0;
+					height:250px;
+				}
+			.socials{
+				opacity:0;
+				position:relative;
+				top:-250px;
+				left:14px;
+				padding:0;
+				height:250px;
+				background:rgba(0,0,0,0.9);
+				a{
+					text-decoration: none;
+					margin-right:5px;
+					display: flex;
+					align-items:center;
+					justify-content: center;
+					width:40px;
+					height:40px;
+					border-radius:50%;
+					border:2px solid white;
+					background-color:black;
+					color:white;
+				}
+			}
+			}
+		.info{
+			margin:10px 0;
+			border:2px solid black;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			h4{
+				margin-top: 10px;
+				
+				font-size:1.1em;
+			}
+			p{
+				
+				font-size: 0.8em;
+			}
+		}
+		}
+	.member:hover{
+		.socials{
+			cursor: pointer;
+			opacity:1;
+		}
+	}
+	}
+}
 
 
 /* For mobile screens*/
 @media screen and (max-width: 767px) {
   .navbar{
   	nav{
+  	padding-left:20px;
   	.links{
   		height:0.1px;
   		overflow: hidden;
@@ -286,6 +468,7 @@ body{
   	}
   
 .banner{
+	padding:0 20px;
 	display: flex;
 	align-items:center;
 	.texts{
@@ -301,7 +484,7 @@ body{
 }
 .wwd{
 	
-	.knowAboutUs{
+	.writeup{
 		width:100vw;
 		h3{
 			font-size:1.8em;
@@ -313,6 +496,7 @@ body{
 	}
 	.theBest{
 		height:650px;
+		margin-left:15px;
 		img{
 			display: none;
 		}
@@ -332,5 +516,60 @@ body{
 	margin-right: 10px;
 	margin-bottom:50px;
 }
+}
+.recents{
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	.writeup{
+		
+		width:85vw;
+		h3{
+			font-size:1.5em;
+		}
+		p{
+			width:85vw;
+		}
+	}
+	.projects{
+		.project{
+			
+			.info{
+				opacity: 1;
+			}
+		}
+		
+	}
+}
+.twitter{
+	margin:50px 0;
+	padding:30px;
+	.info{
+		margin-bottom: 50px;
+		padding:20px;
+	}
+	.images{
+		img{
+			margin-bottom: 30px;
+		}
+	}
+}
+.team{
+
+	.members{
+		padding:30px;
+		.member{
+			margin-right: 0;
+			margin-bottom: 30px;
+			.image{
+
+			.socials{
+				opacity:0.3;
+			}
+			}
+		}
+	}
 }
 }
