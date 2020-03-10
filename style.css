@@ -455,6 +455,8 @@ body {
     text-align: center; }
     .blog .date {
       margin-top: 10px; }
+    .blog .posts .img {
+      height: 250px; }
     .blog .postsr {
       text-align: center; }
     .blog .writeup {
