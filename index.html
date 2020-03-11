@@ -38,9 +38,25 @@
 	$(window).on('resize scroll',function(){
 		var result = checkHeight()
 		if(result==true){
-			$('.gauge').animate({
-				height:"120px",
+			$('.half').animate({
+				height:"80px",
 				width:"220px",
+			},2000)
+			$('.almost-full').animate({
+				height:"130px",
+				width:"200px",
+			},2000)
+			$('.full').animate({
+				height:"150px",
+				width:"200px",
+			},2000)
+			$('.less-half').animate({
+				height:"50px",
+				width:"200px",
+			},2000)
+			$('.quarter-full').animate({
+				height:"100px",
+				width:"200px",
 			},2000)
 		}
 	})
@@ -66,18 +82,17 @@
    var val = 0;
   setInterval(function(){
   val=val+62;
-  if(val>124){
-  	var sliderVal="0vw"
-  	val=0;
-  }
-  else{
-  		
-  		var sliderVal= "-"+val +"vw"
-  }
+   
+ var sliderVal= "-"+val +"vw"
   $('#container').animate({
   	marginLeft : sliderVal
-  },1000)
-  },3000)
+  },1000,function(){
+   if(val===124){
+  	val = -62;  
+  }
+ 
+  })
+  },4000)
  
 </script>
 </html>

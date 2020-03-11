@@ -136,11 +136,11 @@ function Skills(props){
 	return(
 		<div className="skills row">
 
-			<Skill number="90" skill="Management" />
-			<Skill number="70" skill="Marketing" />
-			<Skill number="63" skill="Research" />
-			<Skill number="87" skill="Consultancy" />
-			<Skill number="23" skill="Promotion" />
+			<Skill number="100" mix="full gauge" skill="Management" />
+			<Skill number="50"  mix="half gauge" skill="Marketing" />
+			<Skill number="73"  mix="quarter-full gauge" skill="Research" />
+			<Skill number="23"  mix="less-half gauge" skill="Consultancy" />
+			<Skill number="93"   mix="almost-full gauge" skill="Promotion" />
 		</div>)
 }
 
@@ -149,7 +149,7 @@ function Skill(props){
 		<div className="skill">
 		<div className="contain">
 			<div className="percent">
-				<div  className="gauge">
+				<div  className={props.mix}>
 				</div>
 				<div className="circle">
 					<h2>{props.number}<small>%</small></h2>
@@ -307,9 +307,10 @@ function Blog(props){
 		date="10 April 2014" 
 		message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" />
 		<Posts title="Lorem ipsum dolor sit amet" 
-		image="Images/background.jpg" 
+		image="Images/background.jpg"
 		date="10 April 2014" 
 		message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" />
+		<div className="all"><h4>All Post</h4></div>
 		</div>
 		)
 }
@@ -339,6 +340,100 @@ function PostsR(props){
 
 		)
 }
+
+{/*Contact Us Page*/}
+function Contact(props){
+	return(
+			<div className="contact ">
+			<h3>CONTACT</h3>
+			<form className="col-md-8">
+			<div className="column row col-md-12">
+			<div className="form-item col">
+			<input type="text" name="name"  required/>
+			<label for="name">Name*</label>
+			</div>
+
+			<div className="form-item col ">
+			<input type="email" name="email" required/>
+			<label for="email">Email*</label>
+			</div>
+			</div>
+			<div className="form-item ">
+			<textarea  name="message"  className="col-12"></textarea>
+			<label for="email">Message</label>
+			</div>
+			<hr />
+			<button type="submit"className="btn btn-outline-secondary">Submit</button>
+			</form>
+			</div>
+
+		)
+}
+
+{/*footer section */}
+function Footer(props){
+	return(
+		<div className="footer row justify-content-center align-items-center">
+		<div className="company col">
+		<h2>Logo</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+		quis<br /><br />nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 cillum dolore eu
+		 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+		</div>
+		<div className="recent col-md-3">
+		<h6>RECENT POSTS</h6>
+		<Footposts date="March 11, 2020" post=" Duis aute irure dolor in reprehenderit in"/>
+		<Footposts date="March 11, 2020" post=" Duis aute irure dolor in reprehenderit in"/>
+		<Footposts date="March 11, 2020" post=" Duis aute irure dolor in reprehenderit in"/>
+
+		</div>
+
+		<div className="feeds col-md-3">
+		<h6>TWITTER FEEDS</h6>
+		<Feeds time="About 2 days ago" post=" You did an amazing job" user="@sayoDaGenius"/>
+		<Feeds time="About 2 days ago" post=" You did an amazing job" user="@sayoDaGenius"/>
+		<Feeds time="About 2 days ago" post=" You did an amazing job" user="@sayoDaGenius"/>
+
+		</div>
+		<div className="address  col-md-3">
+		<h6>OUR ADDRESS</h6>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+		quis</p>
+		<ul className="info">
+		<li><i class="fa fa-location-arrow"></i>23 Pinkett hill drive, detroit</li>
+		<li><i class="fa fa-phone"></i>+2347039299606</li>
+		<li><i class="fa fa-envelope"></i>shizzman@gmail.com</li>
+		</ul>
+		</div>
+
+		</div>
+		)
+}
+function Creator(props){
+	return(
+		<div className="creator">
+		<h6>Engineered By STL &#169; 2020 All Rights Reserved</h6>
+		</div>
+		)
+}
+function Footposts(props){
+	return(
+		<div className="footposts">
+		<p className="date">{props.date}</p>
+		<p className="post">{props.post}</p>
+		</div>)
+}
+function Feeds(props){
+	return(
+		<div className="feed">
+		<p className="info"><span class="time">{props.time}</span><span class="user">{props.user}</span></p>
+		<p className="post">{props.post}</p>
+		</div>)
+}
 function App(props){
 	return(
 		<div className="app">
@@ -351,6 +446,9 @@ function App(props){
 		<Team />
 		<Reviews />
 		<Blog />
+		<Contact />
+		<Footer />
+		<Creator />
 		</div>
 		)
 }

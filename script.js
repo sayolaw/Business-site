@@ -222,11 +222,11 @@ function Skills(props) {
 		return React.createElement(
 				"div",
 				{ className: "skills row" },
-				React.createElement(Skill, { number: "90", skill: "Management" }),
-				React.createElement(Skill, { number: "70", skill: "Marketing" }),
-				React.createElement(Skill, { number: "63", skill: "Research" }),
-				React.createElement(Skill, { number: "87", skill: "Consultancy" }),
-				React.createElement(Skill, { number: "23", skill: "Promotion" })
+				React.createElement(Skill, { number: "100", mix: "full gauge", skill: "Management" }),
+				React.createElement(Skill, { number: "50", mix: "half gauge", skill: "Marketing" }),
+				React.createElement(Skill, { number: "73", mix: "quarter-full gauge", skill: "Research" }),
+				React.createElement(Skill, { number: "23", mix: "less-half gauge", skill: "Consultancy" }),
+				React.createElement(Skill, { number: "93", mix: "almost-full gauge", skill: "Promotion" })
 		);
 }
 
@@ -240,7 +240,7 @@ function Skill(props) {
 						React.createElement(
 								"div",
 								{ className: "percent" },
-								React.createElement("div", { className: "gauge" }),
+								React.createElement("div", { className: props.mix }),
 								React.createElement(
 										"div",
 										{ className: "circle" },
@@ -543,7 +543,16 @@ function Blog(props) {
 				React.createElement(Posts, { title: "Lorem ipsum dolor sit amet",
 						image: "Images/background.jpg",
 						date: "10 April 2014",
-						message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" })
+						message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" }),
+				React.createElement(
+						"div",
+						{ className: "all" },
+						React.createElement(
+								"h4",
+								null,
+								"All Post"
+						)
+				)
 		);
 }
 function Posts(props) {
@@ -598,6 +607,200 @@ function PostsR(props) {
 				React.createElement("img", { src: props.image, className: "col-md-5" })
 		);
 }
+
+{/*Contact Us Page*/}
+function Contact(props) {
+		return React.createElement(
+				"div",
+				{ className: "contact " },
+				React.createElement(
+						"h3",
+						null,
+						"CONTACT"
+				),
+				React.createElement(
+						"form",
+						{ className: "col-md-8" },
+						React.createElement(
+								"div",
+								{ className: "column row col-md-12" },
+								React.createElement(
+										"div",
+										{ className: "form-item col" },
+										React.createElement("input", { type: "text", name: "name", required: true }),
+										React.createElement(
+												"label",
+												{ "for": "name" },
+												"Name*"
+										)
+								),
+								React.createElement(
+										"div",
+										{ className: "form-item col " },
+										React.createElement("input", { type: "email", name: "email", required: true }),
+										React.createElement(
+												"label",
+												{ "for": "email" },
+												"Email*"
+										)
+								)
+						),
+						React.createElement(
+								"div",
+								{ className: "form-item " },
+								React.createElement("textarea", { name: "message", className: "col-12" }),
+								React.createElement(
+										"label",
+										{ "for": "email" },
+										"Message"
+								)
+						),
+						React.createElement("hr", null),
+						React.createElement(
+								"button",
+								{ type: "submit", className: "btn btn-outline-secondary" },
+								"Submit"
+						)
+				)
+		);
+}
+
+{/*footer section */}
+function Footer(props) {
+		return React.createElement(
+				"div",
+				{ className: "footer row justify-content-center align-items-center" },
+				React.createElement(
+						"div",
+						{ className: "company col" },
+						React.createElement(
+								"h2",
+								null,
+								"Logo"
+						),
+						React.createElement(
+								"p",
+								null,
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis",
+								React.createElement("br", null),
+								React.createElement("br", null),
+								"nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non"
+						)
+				),
+				React.createElement(
+						"div",
+						{ className: "recent col-md-3" },
+						React.createElement(
+								"h6",
+								null,
+								"RECENT POSTS"
+						),
+						React.createElement(Footposts, { date: "March 11, 2020", post: " Duis aute irure dolor in reprehenderit in" }),
+						React.createElement(Footposts, { date: "March 11, 2020", post: " Duis aute irure dolor in reprehenderit in" }),
+						React.createElement(Footposts, { date: "March 11, 2020", post: " Duis aute irure dolor in reprehenderit in" })
+				),
+				React.createElement(
+						"div",
+						{ className: "feeds col-md-3" },
+						React.createElement(
+								"h6",
+								null,
+								"TWITTER FEEDS"
+						),
+						React.createElement(Feeds, { time: "About 2 days ago", post: " You did an amazing job", user: "@sayoDaGenius" }),
+						React.createElement(Feeds, { time: "About 2 days ago", post: " You did an amazing job", user: "@sayoDaGenius" }),
+						React.createElement(Feeds, { time: "About 2 days ago", post: " You did an amazing job", user: "@sayoDaGenius" })
+				),
+				React.createElement(
+						"div",
+						{ className: "address  col-md-3" },
+						React.createElement(
+								"h6",
+								null,
+								"OUR ADDRESS"
+						),
+						React.createElement(
+								"p",
+								null,
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis"
+						),
+						React.createElement(
+								"ul",
+								{ className: "info" },
+								React.createElement(
+										"li",
+										null,
+										React.createElement("i", { "class": "fa fa-location-arrow" }),
+										"23 Pinkett hill drive, detroit"
+								),
+								React.createElement(
+										"li",
+										null,
+										React.createElement("i", { "class": "fa fa-phone" }),
+										"+2347039299606"
+								),
+								React.createElement(
+										"li",
+										null,
+										React.createElement("i", { "class": "fa fa-envelope" }),
+										"shizzman@gmail.com"
+								)
+						)
+				)
+		);
+}
+function Creator(props) {
+		return React.createElement(
+				"div",
+				{ className: "creator" },
+				React.createElement(
+						"h6",
+						null,
+						"Engineered By STL \xA9 2020 All Rights Reserved"
+				)
+		);
+}
+function Footposts(props) {
+		return React.createElement(
+				"div",
+				{ className: "footposts" },
+				React.createElement(
+						"p",
+						{ className: "date" },
+						props.date
+				),
+				React.createElement(
+						"p",
+						{ className: "post" },
+						props.post
+				)
+		);
+}
+function Feeds(props) {
+		return React.createElement(
+				"div",
+				{ className: "feed" },
+				React.createElement(
+						"p",
+						{ className: "info" },
+						React.createElement(
+								"span",
+								{ "class": "time" },
+								props.time
+						),
+						React.createElement(
+								"span",
+								{ "class": "user" },
+								props.user
+						)
+				),
+				React.createElement(
+						"p",
+						{ className: "post" },
+						props.post
+				)
+		);
+}
 function App(props) {
 		return React.createElement(
 				"div",
@@ -610,7 +813,10 @@ function App(props) {
 				React.createElement(Twitter, null),
 				React.createElement(Team, null),
 				React.createElement(Reviews, null),
-				React.createElement(Blog, null)
+				React.createElement(Blog, null),
+				React.createElement(Contact, null),
+				React.createElement(Footer, null),
+				React.createElement(Creator, null)
 		);
 }
 

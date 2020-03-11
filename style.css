@@ -5,7 +5,7 @@ body {
   padding: 0; }
 
 .navbar {
-  background-color: #222422;
+  background-color: #262625;
   color: white; }
   .navbar nav {
     overflow-x: hidden;
@@ -257,7 +257,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #262625;
     color: white;
     height: 300px; }
     .twitter .info p, .reviews .info p {
@@ -320,7 +320,7 @@ body {
   margin-top: 50px;
   padding: 30px;
   color: white;
-  background-color: black; }
+  background-color: #262625; }
   .reviews h4 {
     margin-top: 30px; }
   .reviews .container {
@@ -342,6 +342,22 @@ body {
       margin: 10px 0;
       width: 60vw; }
 
+.blog .all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 70px;
+  border-radius: 50%;
+  border: 10px solid #fafafa;
+  height: 70px;
+  margin: 0 auto; }
+  .blog .all h4 {
+    width: 30px;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: white; }
 .blog .posts {
   margin-bottom: 50px; }
   .blog .posts .info .date {
@@ -355,6 +371,87 @@ body {
     color: grey; }
 .blog .postsr {
   text-align: right; }
+
+.contact {
+  padding: 30px 0;
+  background-color: #fafafa;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contact h3 {
+    color: #402d0e;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px; }
+  .contact form {
+    display: flex;
+    flex-direction: column; }
+    .contact form button {
+      margin: 0 auto; }
+    .contact form .column {
+      padding: 0; }
+    .contact form .form-item {
+      display: flex;
+      flex-direction: column; }
+      .contact form .form-item input, .contact form .form-item textarea {
+        background-color: #fafafa;
+        margin-bottom: 10px;
+        border-radius: 0%;
+        border: 0px;
+        border-bottom: 3px solid black;
+        outline: none; }
+      .contact form .form-item label {
+        color: grey; }
+
+.footer {
+  padding: 20px 5vw;
+  background-color: #262625;
+  color: grey; }
+  .footer h2 {
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fafafa; }
+  .footer h6 {
+    font-weight: 800; }
+  .footer p {
+    font-size: 0.7em;
+    font-weight: 600; }
+  .footer .company {
+    margin-bottom: 30px; }
+  .footer .recent {
+    margin-bottom: 30px; }
+    .footer .recent .footposts .date {
+      margin-bottom: 2px;
+      color: #fafafa; }
+  .footer .feeds {
+    margin-bottom: 30px; }
+    .footer .feeds .feed .info {
+      margin-bottom: 2px;
+      color: #fafafa; }
+      .footer .feeds .feed .info .user {
+        color: #bfb38f; }
+  .footer .address i {
+    margin-right: 10px; }
+  .footer .address ul {
+    padding: 0; }
+    .footer .address ul li {
+      font-weight: 600;
+      list-style: none;
+      font-size: 0.7em; }
+
+.creator {
+  color: grey;
+  height: 50px;
+  background-color: #222422;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .creator h6 {
+    font-size: 0.7em;
+    font-weight: bold; }
 
 /* For mobile screens*/
 @media screen and (max-width: 767px) {
@@ -460,6 +557,24 @@ body {
     .blog .postsr {
       text-align: center; }
     .blog .writeup {
-      margin-left: -14px; } }
+      margin-left: -14px; }
+
+  .contact {
+    width: 100vw;
+    margin-left: -14px; }
+
+  .contact {
+    text-align: center; }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .contact form textarea {
+        width: 90vw; }
+
+  .creator {
+    width: 100vw;
+    margin-left: -14px; } }
 
 /*# sourceMappingURL=style.css.map */
